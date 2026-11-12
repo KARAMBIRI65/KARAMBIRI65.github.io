@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cv/
+
+Sitemap: https://karambiri65.github.io/sitemap.xml

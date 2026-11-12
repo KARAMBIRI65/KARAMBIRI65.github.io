@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://karambiri65.goatcounter.com; connect-src 'self' https://karambiri65.goatcounter.com; object-src 'none'; base-uri 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maintenance prédictive des moteurs d'avion · Issa Aziz KARAMBIRI</title>
+<meta name="description" content="Étude de cas : prévoir combien de vols il reste à un moteur d'avion avant la panne et décider quand l'inspecter. XGBoost sur les données NASA C-MAPSS.">
+<meta name="theme-color" content="#06080D">
+<link rel="canonical" href="https://karambiri65.github.io/projets/maintenance-predictive.html">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Maintenance prédictive des moteurs d'avion · Issa Aziz KARAMBIRI">
+<meta property="og:description" content="25 pannes imminentes détectées sur 25, avec seulement 5 fausses alertes sur 75 moteurs sains.">
+<meta property="og:image" content="https://karambiri65.github.io/images/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#06080D;--panel:#0F1521;--line:#1C2433;--line2:#2A3446;--ink:#EEF1F6;--muted:#8892A6;--body:#B3BACA;--dim:#5B6478;--blue:#5B8CFF;--gold:#F2B84B;--gold-bg:#F2B84B;--up:#35D39A}
+:root.light{color-scheme:light;--bg:#F4F6F9;--panel:#FFFFFF;--line:#DFE3EA;--line2:#C9D0DB;--ink:#0D1320;--muted:#566074;--body:#3B4354;--dim:#8C95A8;--blue:#3563E9;--gold:#A86E00;--up:#0E8F63}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope","Segoe UI",system-ui,sans-serif;font-size:17px;line-height:1.7}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:60px;max-width:1100px}
+.back{text-decoration:none;color:var(--muted);font-size:.9rem;font-weight:600}
+.back:hover{color:var(--ink)}
+.logo{font-family:"Unbounded",sans-serif;font-weight:900;text-decoration:none;font-size:.95rem}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+header.hero{padding:96px 0 56px}
+h1,h2{font-family:"Unbounded",sans-serif;letter-spacing:-.035em;line-height:1.05;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:700;margin-top:18px}
+.lead{font-size:1.2rem;color:var(--body);margin:22px 0 0;max-width:40ch}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:56px 0 0}
+.kpi{padding:26px 18px 26px 0}
+.kpi+.kpi{padding-left:18px;border-left:1px solid var(--line)}
+.kpi b{display:block;font-family:"Unbounded",sans-serif;font-size:clamp(1.6rem,3.4vw,2.3rem);letter-spacing:-.03em;color:var(--gold)}
+.kpi span{color:var(--muted);font-size:.86rem;line-height:1.5;display:block;margin-top:6px}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+section .num{font-family:"JetBrains Mono",monospace;color:var(--gold);font-size:.8rem}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:700;margin:10px 0 20px}
+section p{margin:0 0 14px;color:var(--body);max-width:62ch}
+ol.steps{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:14px;counter-reset:s}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:12px;padding:18px 20px;background:var(--panel);border:1px solid var(--line);border-radius:16px;color:var(--body)}
+ol.steps li::before{content:"0" counter(s);font-family:"JetBrains Mono",monospace;color:var(--gold);font-size:.85rem;padding-top:2px}
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px;margin-top:22px}
+.chart svg{display:block;width:100%;height:auto}
+.chart small{display:block;color:var(--muted);font-size:.82rem;margin-top:10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.tags span{font-family:"JetBrains Mono",monospace;font-size:.75rem;border:1px solid var(--line2);border-radius:999px;padding:6px 12px;color:var(--body)}
+.cta{padding:88px 0 110px;border-bottom:0;text-align:center}
+.cta p{margin:0 auto 26px;max-width:46ch}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.95rem;padding:14px 22px;border-radius:999px;text-decoration:none;border:1px solid var(--line2)}
+.btn.primary{background:var(--gold-bg);color:#1A1203;border-color:var(--gold-bg)}
+footer{padding:28px 0;color:var(--dim);font-size:.82rem;text-align:center}
+@media (max-width:720px){ .kpis{grid-template-columns:1fr 1fr} .kpi:nth-child(3){padding-left:0;border-left:0} .kpi:nth-child(n+3){border-top:1px solid var(--line)} header.hero{padding:64px 0 40px} section{padding:56px 0} }
+@media print{ .top,.cta{display:none} }
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><a class="back" href="../index.html#projets" data-en="← Back to the portfolio">← Retour au portfolio</a><a class="logo" href="../index.html">IAK</a></div></div>
+<main class="wrap">
+  <header class="hero">
+    <span class="eyebrow" data-en="Case study · Industry · Aerospace">Étude de cas · Industrie · Aéronautique</span>
+    <h1 data-en="Predictive maintenance of aircraft engines">Maintenance prédictive des moteurs d'avion</h1>
+    <p class="lead" data-en="Predict how many flights an engine has left before failure, and decide when to inspect it.">Prévoir combien de vols il reste à un moteur avant la panne, et décider quand l'inspecter.</p>
+    <div class="kpis">
+      <div class="kpi"><b>25/25</b><span data-en="imminent failures detected">pannes imminentes détectées</span></div>
+      <div class="kpi"><b>5</b><span data-en="false alarms out of 75 healthy engines">fausses alertes sur 75 moteurs sains</span></div>
+      <div class="kpi"><b>11</b><span data-en="flights of average error on the forecast">vols d'erreur moyenne sur la prévision</span></div>
+      <div class="kpi"><b>42</b><span data-en="cycles, the inspection threshold that minimises cost">cycles, le seuil d'inspection qui minimise le coût</span></div>
+    </div>
+  </header>
+
+  <section>
+    <span class="num">01</span>
+    <h2 data-en="The problem">Le problème</h2>
+    <p data-en="A missed engine failure costs far more than an unnecessary inspection. The challenge is not only to predict, but to decide at the right moment.">Une panne moteur ratée coûte bien plus cher qu'une inspection en trop. L'enjeu n'est donc pas seulement de prévoir, mais de décider au bon moment.</p>
+  </section>
+
+  <section>
+    <span class="num">02</span>
+    <h2 data-en="The data">Les données</h2>
+    <p data-en="NASA's C-MAPSS dataset, which simulates turbofan engines monitored by many sensors, from their first flight until failure.">Le jeu de données C-MAPSS de la NASA, qui simule des turboréacteurs suivis par de nombreux capteurs, de leur premier vol jusqu'à la panne.</p>
+  </section>
+
+  <section>
+    <span class="num">03</span>
+    <h2 data-en="The approach">La démarche</h2>
+    <ol class="steps">
+      <li data-en="Prepare the sensor time series for each engine.">Préparer les séries temporelles des capteurs pour chaque moteur.</li>
+      <li data-en="Forecast the number of remaining flights with XGBoost.">Prévoir le nombre de vols restants avec XGBoost.</li>
+      <li data-en="Choose the inspection threshold that minimises the total cost, weighing a missed failure against an extra inspection.">Choisir le seuil d'inspection qui minimise le coût total, en comparant une panne ratée et une inspection en trop.</li>
+    </ol>
+  </section>
+
+  <section>
+    <span class="num">04</span>
+    <h2 data-en="The results">Les résultats</h2>
+    <p data-en="An average error of 11 flights, close to results published in research papers that use neural networks. With a 42-cycle threshold, all 25 imminent failures are detected, with only 5 false alarms out of 75 healthy engines.">Une erreur moyenne de 11 vols, proche des résultats publiés dans des articles de recherche qui utilisent des réseaux de neurones. Avec un seuil de 42 cycles, les 25 pannes imminentes sont détectées, pour seulement 5 fausses alertes sur 75 moteurs sains.</p>
+    <div class="chart" aria-hidden="true">
+      <svg viewBox="0 0 320 160" fill="none">
+        <line x1="30" y1="10" x2="30" y2="140" stroke="var(--line2)"/><line x1="30" y1="140" x2="310" y2="140" stroke="var(--line2)"/>
+        <line x1="30" y1="112" x2="310" y2="112" stroke="var(--gold)" stroke-dasharray="4 4"/>
+        <path d="M30 28 L120 28 L150 40 L180 56 L210 74 L240 94 L262 112 L285 128 L300 136" stroke="var(--dim)" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <path d="M30 30 L60 26 L90 33 L120 29 L150 44 L180 52 L210 79 L240 90 L262 110 L285 131 L300 134" stroke="var(--blue)" stroke-width="2.5"/>
+        <circle cx="262" cy="111" r="4.5" fill="var(--gold)"/>
+        <text x="200" y="106" fill="var(--gold)" font-family="JetBrains Mono, monospace" font-size="9">seuil · 42 cycles</text>
+      </svg>
+      <small data-en="Illustration · blue the forecast, dotted the reality, the alert fires when the forecast crosses the threshold.">Illustration · en bleu la prévision, en pointillés la réalité, l'alerte se déclenche quand la prévision passe sous le seuil.</small>
+    </div>
+  </section>
+
+  <section>
+    <span class="num">05</span>
+    <h2 data-en="Limits and next steps">Limites et suites</h2>
+    <p data-en="The data is simulated, so the model would need to be validated on real operational data. The costs of a failure and of an inspection should be set with the maintenance teams. A forecast with an uncertainty interval would make the decision even easier.">Les données sont simulées, il faudrait donc valider le modèle sur des données réelles d'exploitation. Les coûts d'une panne et d'une inspection sont à fixer avec les équipes de maintenance. Une prévision accompagnée d'un intervalle d'incertitude rendrait la décision encore plus simple.</p>
+    <div class="tags"><span>Python</span><span>XGBoost</span><span data-en="Time series">Séries temporelles</span><span>NASA C-MAPSS</span><span data-en="Cost optimisation">Optimisation du coût</span></div>
+  </section>
+
+  <section class="cta">
+    <h2 data-en="Want to talk about it?">On en parle&nbsp;?</h2>
+    <p data-en="The full code and analysis are on GitHub.">Le code complet et l'analyse sont sur GitHub.</p>
+    <div class="btns">
+      <a class="btn primary" href="../index.html#contact" data-en="Contact me">Me contacter</a>
+      <a class="btn" href="https://github.com/KARAMBIRI65/maintenance-predictive-moteurs-avion" target="_blank" rel="noopener" data-en="See the code on GitHub">Voir le code sur GitHub</a>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Issa Aziz KARAMBIRI</footer>
+<script src="../js/case.js"></script>
+<script data-goatcounter="https://karambiri65.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
