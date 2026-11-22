@@ -694,3 +694,35 @@ main:focus{outline:none}
 .role-photo .hob-photo{margin-top:0}
 .role-photo .hob-photo img{aspect-ratio:1/1;object-position:50% 68%}
 .role-photo figcaption{margin-top:8px;font-size:.84rem;color:var(--muted)}
+
+/* Mise en page aérée */
+.sec{padding-block:150px}
+.sec-head{margin-bottom:72px}
+.stats .stat{padding:44px 28px}
+.about-text p{margin:0 0 22px}
+.about-text p:last-child{color:var(--ink);font-style:italic}
+.grid-proj{gap:26px}
+.card{padding:32px;gap:14px}
+.card:not(.feat) .tags{display:none}
+.filters{margin-bottom:40px}
+.also{margin-top:40px}
+.xp{gap:26px}
+.job{padding:36px}
+.mind-item{padding:24px 0}
+.seek{margin-top:72px}
+.school{margin-top:72px;padding:40px}
+.school-wq{margin-top:28px}
+.two{gap:28px}
+.box{padding:34px}
+.awards,.hobbies{margin-top:56px;padding-top:56px}
+.award-wide img{height:clamp(200px,24vw,320px)}
+.qr-card{display:none!important}
+.contact{padding-block:150px 90px}
+.contact-grid{margin-top:64px;gap:56px}
+@media (min-width:641px){ .grid-proj:not(.show-all):not(.filtered) > .card:nth-child(n+8){display:none} .more-proj{display:flex!important;width:fit-content;margin:40px auto 0} .grid-proj.filtered + .more-proj{display:none!important} }
+@media (max-width:900px){ .sec{padding-block:90px} .sec-head{margin-bottom:44px} .contact{padding-block:90px 70px} }
+.role:not(.now) .role-photo .hob-photo img{aspect-ratio:auto;object-fit:contain}
+
+.award-photos{grid-template-columns:1fr}
+.seek{grid-template-columns:minmax(0,1fr) auto}
+@media (max-width:900px){ .seek{grid-template-columns:1fr} .seek div:nth-child(3){grid-column:auto} }
