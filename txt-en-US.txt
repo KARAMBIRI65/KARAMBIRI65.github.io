@@ -1,0 +1,377 @@
+Skip to content
+IAK
+EN
+FR
+Contact
+●
+Engineering student at ENSIIE · 3 to 4 month internship from May 2027
+
+I am a data & AI engineering student
+
+Issa Aziz
+KARAMBIRI
+
+I love turning data into decisions, whatever the sector.
+
+Contact me
+Download my CV
+Internship CV
+Includes my internship search from May 2027
+Standard CV
+My profile, without the internship search
+IAK · 2026
+ENSIIE · Évry
+Data science
+AI & deep learning
+Finance & markets
+25/25
+failures detected
+2
+countries of study, an international path: Morocco and France
+2
+first internships: data science and web development
+−77 %
+fraud losses in my banking project
+8
+sectors covered by my projects, from aerospace to finance
+01 · ABOUT
+Issa Aziz KARAMBIRI, data & AI engineering student.
+
+My name is Issa and I am in the second year of the engineering programme in applied mathematics and computer science at the École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE). I like starting from a real problem and looking in the data for what can truly help.
+
+Industry, aerospace, health, environment, sport, I adapt to any field. Finance remains the one that appeals to me most, and I am training in market finance alongside my studies with WorldQuant University.
+
+The rest, I would rather tell you in person.
+
+EDUCATION
+ENSIIE, engineering programme, 2nd year (Master 1)
+IN PARALLEL
+MSc in Financial Engineering, WorldQuant University (online, 2026 – 2028)
+LANGUAGES
+French, English (B2)
+02 · PROJECTS
+One craft, many playing fields.
+All
+Industry
+Environment
+Cybersecurity
+Health
+Sport
+Real estate
+Banking
+Markets
+INDUSTRY · AEROSPACE
+Predictive maintenance of aircraft engines
+
+Predict how many flights an engine has left before failure, and when to inspect it.
+
+25/25
+imminent failures detected, with 5 false alarms out of 75 healthy engines
+inspection threshold · 42 cycles
+flights left
+flights flown →
+— forecast
+- - actual
+Read the case study
+→
+maintenance-predictive-moteurs-avion
+ENVIRONMENT
+Flood forecasting in France
+
+Early warning on 19 French rivers, built on 20 years of data.
+
+79 %
+of floods forecast, on average 2.4 days in advance
+prevision-crues-france
+CYBERSECURITY · INNOVATION
+PROJECT CHALLENGE
+VIGIE, the anti-scam assistant for seniors
+
+Spots scam texts and warns seniors before they click, without ever reading their conversations.
+
+4 days
+5 students from 3 schools (ENSIIE, Télécom SudParis, IMT-BS). I was in charge of the technical side and the prototype.
+Messages
+14:02
+Parcel on hold. A €1.99 fee must be paid before tonight: livr-colis-fr.info
+⚠ Dangerous message
+This link imitates a delivery company. Do not pay anything.
+Call Sophie (my daughter)
+€516M stolen from people in France in 2025 by this type of scam
+ENVIRONMENT · VISION
+Litter detection on beaches
+
+YOLOv8 trained on hand-labelled images to spot 6 types of litter.
+
+89.5 %
+F1-score (precision 89.4 %, recall 89.5 %)
+Jan – Mar 2025
+HEALTH
+Type 2 diabetes screening
+
+Estimate 5-year risk from a routine check-up.
+
+87 %
+of patients detected, versus 46 % for the clinical rule alone
+depistage-diabete
+Show all projects
+SCHOOL PROGRAMMING PROJECTS
+Black-Scholes model
+C++ · European option pricing using stochastic processes courses · 2026, in progress
+OCaml virtual machine
+C · bytecode interpretation, stack and memory management · 2026
+Mini relational DBMS
+OCaml · design, implementation and analysis of a working relational database management system · INPF12 module, ENSIIE 1st year, 2025-2026
+03 · EXPERIENCE
+Two first internships, to lay the foundations.
+Mar – May 2025
+ENTSI · Oujda, Morocco
+Data science intern · OptiTrade
+Investment support web application
+300,000
+rows of stock data at the start
+246,437
+after cleaning
+4
+models compared
+I compared linear regression, Random Forest, XGBoost and an LSTM (MSE, RMSE, R²) to recommend buying, selling or holding a stock.
+I integrated the model into a complete web application.
+Python
+Django REST
+React
+PostgreSQL
+scikit-learn
+TensorFlow
+Jun – Jul 2024
+ENTSI · Oujda, Morocco
+Web developer intern · GESCOM
+Sales management application
+I built the management of customers, products, sales, purchases and user roles.
+I optimised the slowest SQL queries.
+PHP
+MySQL
+Bootstrap
+jQuery
+04 · WHAT I AM LOOKING FOR
+An internship to learn, and be useful from day one.
+
+I don't claim to know everything. I want to learn from a demanding team, and bring it my rigour.
+
+01
+I ask questions
+02
+I measure what matters
+03
+I check my work
+04
+I learn fast
+FIELDS
+Data science · data analysis · data engineering · finance
+Offer me an internship
+05 · BACKGROUND
+An international path, two degrees in parallel.
+2023 – 2025 · Morocco
+DUT (two-year technology degree)
+École Supérieure de Technologie d'Oujda
+
+Where I did my first two company internships.
+
+HIGHEST HONOURS
+Since Sept. 2025 · France
+ENSIIE, engineering programme
+École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise
+
+I am in my 2nd year (Master 1) in Évry-Courcouronnes, studying applied mathematics and computer science with a focus on data, AI and finance.
+
+Since Nov. 2026 · Online, United States
+Master of Science in Financial Engineering
+WorldQuant University
+
+A two-year online programme I follow alongside ENSIIE, to train in market finance.
+
+IN PARALLEL
+MAIN DEGREE
+ENSIIE · Engineering programme
+2ND YEAR · MASTER 1
+MATH
+Applied mathematics
+Probability
+Stochastic processes
+Optimisation
+Operations research
+DATA
+Data & AI
+Machine learning
+Deep learning
+SQL databases
+NoSQL databases
+FIN
+Quantitative finance
+Black-Scholes model (C++)
+European option pricing
+Applied stochastic processes
+INFO
+Computer science & systems
+C and C++ programming
+Functional programming (OCaml)
+Relational DBMS and virtual machine
+IN PARALLEL · SINCE NOVEMBER 2026
+WorldQuant University · MSc in Financial Engineering
+
+Online, over two years, on top of my engineering degree.
+
+2026 – 2028 · ONLINE
+MKT
+Markets & data
+Financial markets
+Financial data
+Financial econometrics
+DRV
+Derivatives & stochastics
+Derivative pricing
+Stochastic modelling
+ML
+AI for finance
+Machine learning in finance
+Deep learning for finance
+RISK
+Portfolio & risk
+Portfolio management
+Risk management
+Capstone project
+06 · SKILLS
+From raw data to explained decisions.
+Languages
+Python
+SQL
+C++
+C
+R
+OCaml
+Java
+PHP
+HTML
+CSS
+JavaScript
+Data & AI
+pandas · NumPy
+scikit-learn
+XGBoost
+TensorFlow
+PyTorch
+YOLOv8 · OpenCV
+SHAP
+Hugging Face
+Methods
+Time series
+GARCH · LSTM
+Rare events
+Cross-validation
+Optimisation
+Econometrics
+Tools
+PostgreSQL
+Django · React
+Streamlit
+Git · GitHub
+VS Code
+Jupyter · Colab
+LaTeX
+Power BI
+Excel
+LANGUAGES
+French native
+English B2
+07 · VOLUNTEERING & AWARDS
+Taking on responsibility to help others.
+ONGOING
+Aug 2026 – present
+Ambassador, YITU Association
+Île-de-France · volunteering
+
+YITU has been fighting student poverty for several years, with free meal distributions and CV and tutoring workshops. As an ambassador, I take part in these solidarity actions.
+
+Solidarity distribution of free meals to students facing financial hardship, November 2026.
+Leadership
+Solidarity
+Equal opportunities
+Guidance
+yituassociation.org
+MOROCCO
+2024 – 2025
+Academic officer, AEBM Oujda
+Oujda, Morocco · student association life
+
+I coordinated the association's academic activities and supported its student members.
+
+AEBM Oujda board, 2024-2025 term.
+Mentoring
+Organisation
+AEBM Facebook page
+AWARDS
+2024
+Winner of the public speaking contest
+
+CETASSO Science Week, Oujda.
+
+2023 – 2024
+Award of Excellence
+
+Awarded by CETASSO, Mohammed First University, Oujda.
+
+In the final of the public speaking contest, CETASSO Science Week, Oujda, 2024.
+OUTSIDE OF CLASS
+Reading
+
+I like learning beyond the classroom.
+
+Music
+
+It helps me focus as well as unwind.
+
+Cooking
+
+I am always looking for new recipes.
+
+08 · CONTACT
+A problem,
+some data? Let’s talk.
+
+I am looking for a 3 to 4 month internship from May 2027. The best way is to talk about it.
+
+EMAIL
+issaaziz.karambiri@ensiie.eu
+Copy address
+PHONE
++33 7 61 20 07 82
+Copy number
+CITY
+Évry-Courcouronnes (91000), France
+github.com/KARAMBIRI65
+linkedin.com/in/karambiri-ma
+Download my CV (PDF)
+Internship CV
+Includes my internship search from May 2027
+Standard CV
+My profile, without the internship search
+Leave a message
+I read every message and reply quickly.
+NAME
+EMAIL
+SUBJECT
+Internship offer
+Question about a project
+Getting in touch
+MESSAGE
+0 / 2000
+Send message
+IAK
+Issa’s assistant
+● answers about his background and projects
+↺
+×
+Send
+© 2026 Issa Aziz KARAMBIRI · Privacy
+Morocco → France
+A question about Issa?
+I answer instantly, in English or French.

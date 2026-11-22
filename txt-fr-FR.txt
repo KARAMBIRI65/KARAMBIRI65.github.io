@@ -1,0 +1,377 @@
+Aller au contenu
+IAK
+FR
+EN
+Contact
+●
+Élève ingénieur à l'ENSIIE · Stage de 3 à 4 mois dès mai 2027
+
+Je suis élève ingénieur data & IA
+
+Issa Aziz
+KARAMBIRI
+
+J'aime transformer des données en décisions, quel que soit le secteur.
+
+Me contacter
+Télécharger mon CV
+CV pour un stage
+Avec ma recherche de stage dès mai 2027
+CV simple
+Mon parcours, sans mention de stage
+IAK · 2026
+ENSIIE · Évry
+Data science
+IA & deep learning
+Finance & marchés
+25/25
+pannes détectées
+2
+pays d'études, un parcours international : Maroc et France
+2
+premiers stages : data science et développement web
+−77 %
+de pertes liées à la fraude dans mon projet bancaire
+8
+secteurs couverts par mes projets, de l'aéronautique à la finance
+01 · À PROPOS
+Issa Aziz KARAMBIRI, élève ingénieur data & IA.
+
+Je m'appelle Issa et je suis en deuxième année du cycle ingénieur en mathématiques appliquées et informatique à l'École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE). J'aime partir d'un vrai problème et chercher dans les données ce qui peut vraiment aider.
+
+Industrie, aéronautique, santé, environnement, sport, je m'adapte à tous les domaines. La finance reste celui qui m'attire le plus, et je me forme en parallèle à la finance de marché avec WorldQuant University.
+
+Le reste, je préfère vous le raconter de vive voix.
+
+FORMATION
+ENSIIE, cycle ingénieur, 2e année (Master 1)
+EN PARALLÈLE
+MSc Financial Engineering, WorldQuant University (en ligne, 2026 – 2028)
+LANGUES
+Français, anglais (B2)
+02 · PROJETS
+Un même métier, de nombreux terrains de jeu.
+Tous
+Industrie
+Environnement
+Cybersécurité
+Santé
+Sport
+Immobilier
+Banque
+Marchés
+INDUSTRIE · AÉRONAUTIQUE
+Maintenance prédictive des moteurs d'avion
+
+Prévoir combien de vols il reste à un moteur avant la panne, et quand l'inspecter.
+
+25/25
+pannes imminentes détectées, avec 5 fausses alertes sur 75 moteurs sains
+seuil d'inspection · 42 cycles
+vols restants
+vols effectués →
+— prévision
+- - réel
+Lire l'étude de cas
+→
+maintenance-predictive-moteurs-avion
+ENVIRONNEMENT
+Prévision des crues en France
+
+Alerte précoce sur 19 rivières françaises, avec 20 ans de données.
+
+79 %
+des crues annoncées, en moyenne 2,4 jours à l'avance
+prevision-crues-france
+CYBERSÉCURITÉ · INNOVATION
+CHALLENGE PROJET
+VIGIE, l'assistant anti-arnaques des seniors
+
+Repère les SMS frauduleux et alerte le senior avant qu'il clique, sans jamais lire ses conversations.
+
+4 jours
+5 étudiants de 3 écoles (ENSIIE, Télécom SudParis, IMT-BS). J'étais responsable de la technique et du prototype.
+Messages
+14:02
+Colis en attente. Frais de 1,99 € à régler avant ce soir : livr-colis-fr.info
+⚠ Message dangereux
+Ce lien imite un transporteur. Ne payez rien.
+Appeler Sophie (ma fille)
+516 M€ volés aux Français en 2025 par ce type d'arnaque
+ENVIRONNEMENT · VISION
+Détection de déchets sur les plages
+
+YOLOv8 entraîné sur des images annotées à la main pour repérer 6 types de déchets.
+
+89,5 %
+de F1-score (précision 89,4 %, rappel 89,5 %)
+janv. – mars 2025
+SANTÉ
+Dépistage du diabète de type 2
+
+Estimer le risque à 5 ans à partir d'une simple consultation.
+
+87 %
+des malades détectés, contre 46 % pour la règle clinique seule
+depistage-diabete
+Voir tous les projets
+PROJETS D'ÉCOLE EN PROGRAMMATION
+Modèle de Black-Scholes
+C++ · prix d'options européennes avec les cours de processus stochastiques · 2026, en cours
+Machine virtuelle OCaml
+C · interprétation du bytecode, pile et gestion de la mémoire · 2026
+Mini-SGBD relationnel
+OCaml · conception, implémentation et analyse d'un système de gestion de bases de données relationnelles fonctionnel · module INPF12, ENSIIE 1re année, 2025-2026
+03 · EXPÉRIENCES
+Deux premiers stages, pour poser les bases.
+mars – mai 2025
+ENTSI · Oujda, Maroc
+Stagiaire data science · OptiTrade
+Application web d'aide à l'investissement
+300 000
+lignes boursières au départ
+246 437
+après nettoyage
+4
+modèles comparés
+J'ai comparé la régression linéaire, Random Forest, XGBoost et un LSTM (MSE, RMSE, R²) pour conseiller d'acheter, de vendre ou de garder une action.
+J'ai intégré le modèle dans une application web complète.
+Python
+Django REST
+React
+PostgreSQL
+scikit-learn
+TensorFlow
+juin – juil. 2024
+ENTSI · Oujda, Maroc
+Stagiaire développeur web · GESCOM
+Application de gestion commerciale
+J'ai développé la gestion des clients, des produits, des ventes, des achats et des rôles utilisateurs.
+J'ai optimisé les requêtes SQL les plus lentes.
+PHP
+MySQL
+Bootstrap
+jQuery
+04 · CE QUE JE CHERCHE
+Un stage pour apprendre, et être utile dès le début.
+
+Je ne prétends pas tout savoir. Je veux apprendre auprès d'une équipe exigeante, et lui apporter ma rigueur.
+
+01
+Je pose des questions
+02
+Je mesure ce qui compte
+03
+Je vérifie mon travail
+04
+J'apprends vite
+DOMAINES
+Data science · data analyse · data engineering · finance
+Me proposer un stage
+05 · PARCOURS
+Un parcours international, deux formations menées de front.
+2023 – 2025 · Maroc
+DUT Technologique
+École Supérieure de Technologie d'Oujda
+
+J'y ai fait mes deux premiers stages en entreprise.
+
+MENTION TRÈS BIEN
+Depuis sept. 2025 · France
+ENSIIE, cycle ingénieur
+École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise
+
+Je suis en 2ᵉ année (Master 1) à Évry-Courcouronnes, en mathématiques appliquées et informatique, avec une orientation data, IA et finance.
+
+Depuis nov. 2026 · En ligne, États-Unis
+Master of Science en ingénierie financière
+WorldQuant University
+
+Un programme en ligne de deux ans que je suis en parallèle de l'ENSIIE, pour me former à la finance de marché.
+
+EN PARALLÈLE
+FORMATION PRINCIPALE
+ENSIIE · Cycle ingénieur
+2ᵉ ANNÉE · MASTER 1
+MATH
+Mathématiques appliquées
+Probabilités
+Processus stochastiques
+Optimisation
+Recherche opérationnelle
+DATA
+Data & IA
+Machine learning
+Deep learning
+Bases de données SQL
+Bases de données NoSQL
+FIN
+Finance quantitative
+Modèle de Black-Scholes (C++)
+Pricing d'options européennes
+Application des processus stochastiques
+INFO
+Informatique & systèmes
+Programmation C et C++
+Programmation fonctionnelle (OCaml)
+SGBD relationnel et machine virtuelle
+EN PARALLÈLE · DEPUIS NOVEMBRE 2026
+WorldQuant University · MSc Financial Engineering
+
+En ligne, sur deux ans, en plus de ma formation d'ingénieur.
+
+2026 – 2028 · EN LIGNE
+MKT
+Marchés & données
+Marchés financiers
+Données financières
+Économétrie financière
+DRV
+Dérivés & stochastique
+Pricing des produits dérivés
+Modélisation stochastique
+ML
+IA pour la finance
+Machine learning en finance
+Deep learning pour la finance
+RISK
+Portefeuille & risques
+Gestion de portefeuille
+Gestion des risques
+Projet de fin d'études (capstone)
+06 · COMPÉTENCES
+De la donnée brute à la décision expliquée.
+Langages
+Python
+SQL
+C++
+C
+R
+OCaml
+Java
+PHP
+HTML
+CSS
+JavaScript
+Data & IA
+pandas · NumPy
+scikit-learn
+XGBoost
+TensorFlow
+PyTorch
+YOLOv8 · OpenCV
+SHAP
+Hugging Face
+Méthodes
+Séries temporelles
+GARCH · LSTM
+Événements rares
+Validation croisée
+Optimisation
+Économétrie
+Outils
+PostgreSQL
+Django · React
+Streamlit
+Git · GitHub
+VS Code
+Jupyter · Colab
+LaTeX
+Power BI
+Excel
+LANGUES
+Français langue maternelle
+Anglais B2
+07 · ENGAGEMENT & DISTINCTIONS
+Prendre des responsabilités au service des autres.
+EN COURS
+août 2026 – aujourd'hui
+Ambassadeur, YITU Association
+Île-de-France · bénévolat
+
+YITU s'engage depuis plusieurs années dans la lutte contre la précarité étudiante, avec des distributions de repas gratuits et des ateliers CV et de soutien scolaire. En tant qu'ambassadeur, je participe à ces actions solidaires.
+
+Distribution solidaire de repas gratuits aux étudiants en situation de précarité, novembre 2026.
+Leadership
+Solidarité
+Égalité des chances
+Orientation
+yituassociation.org
+MAROC
+2024 – 2025
+Chargé académique, AEBM Oujda
+Oujda, Maroc · vie associative étudiante
+
+Je coordonnais les activités académiques de l'association et j'accompagnais les étudiants membres.
+
+Bureau de l'AEBM Oujda, mandat 2024-2025.
+Accompagnement
+Organisation
+Page Facebook de l'AEBM
+DISTINCTIONS
+2024
+Lauréat du concours d'art oratoire
+
+Semaine scientifique du CETASSO, Oujda.
+
+2023 – 2024
+Prix d'Excellence
+
+Décerné par le CETASSO, Université Mohammed Premier d'Oujda.
+
+En finale du concours d'art oratoire, Semaine scientifique du CETASSO, Oujda, 2024.
+EN DEHORS DES COURS
+Lecture
+
+J'aime apprendre au-delà des cours.
+
+Musique
+
+Elle m'aide à me concentrer comme à décompresser.
+
+Cuisine
+
+Je suis toujours à la recherche de nouvelles recettes.
+
+08 · CONTACT
+Un problème,
+des données ? Parlons-en.
+
+Je cherche un stage de 3 à 4 mois dès mai 2027. Le mieux, c'est d'en parler.
+
+E-MAIL
+issaaziz.karambiri@ensiie.eu
+Copier l'adresse
+TÉLÉPHONE
++33 7 61 20 07 82
+Copier le numéro
+VILLE
+Évry-Courcouronnes (91000), France
+github.com/KARAMBIRI65
+linkedin.com/in/karambiri-ma
+Télécharger mon CV (PDF)
+CV pour un stage
+Avec ma recherche de stage dès mai 2027
+CV simple
+Mon parcours, sans mention de stage
+Laisser un message
+Je lis chaque message et je réponds rapidement.
+NOM
+E-MAIL
+OBJET
+Proposition de stage
+Question sur un projet
+Prise de contact
+MESSAGE
+0 / 2000
+Envoyer le message
+IAK
+L'assistant d'Issa
+● répond sur son parcours et ses projets
+↺
+×
+Envoyer
+© 2026 Issa Aziz KARAMBIRI · Confidentialité
+Maroc → France
+Une question sur Issa ?
+Je réponds en direct, en français ou en anglais.
