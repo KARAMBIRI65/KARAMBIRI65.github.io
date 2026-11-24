@@ -29,11 +29,11 @@
 <meta name="twitter:title" content="Issa Aziz KARAMBIRI · Data science, IA et finance">
 <meta name="twitter:description" content="Élève ingénieur à l'ENSIIE. Projets en data science, IA et finance.">
 <meta name="twitter:image" content="https://issakarambiri.com/images/og-image.jpg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://issakarambiri.com/#issa","name":"Issa Aziz KARAMBIRI","givenName":"Issa Aziz","familyName":"KARAMBIRI","alternateName":["Issa KARAMBIRI","Aziz KARAMBIRI","Issa Aziz Karambiri"],"url":"https://issakarambiri.com/","image":"https://issakarambiri.com/images/photo-issa.jpg","jobTitle":"Élève ingénieur data science et IA","email":"mailto:issaaziz.karambiri@ensiie.eu","address":{"@type":"PostalAddress","addressLocality":"Évry-Courcouronnes","postalCode":"91000","addressCountry":"FR"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE)"},{"@type":"CollegeOrUniversity","name":"WorldQuant University"}],"knowsAbout":["Data science","Machine learning","Intelligence artificielle","Finance","Python","SQL"],"sameAs":["https://github.com/KARAMBIRI65","https://www.linkedin.com/in/karambiri-ma"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","@id":"https://issakarambiri.com/#issa","name":"Issa Aziz KARAMBIRI","givenName":"Issa Aziz","familyName":"KARAMBIRI","alternateName":["Issa KARAMBIRI","Aziz KARAMBIRI","Issa Aziz Karambiri"],"url":"https://issakarambiri.com/","image":"https://issakarambiri.com/images/photo-issa.webp","jobTitle":"Élève ingénieur data science et IA","email":"mailto:issaaziz.karambiri@ensiie.eu","address":{"@type":"PostalAddress","addressLocality":"Évry-Courcouronnes","postalCode":"91000","addressCountry":"FR"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE)"},{"@type":"CollegeOrUniversity","name":"WorldQuant University"}],"knowsAbout":["Data science","Machine learning","Intelligence artificielle","Finance","Python","SQL"],"sameAs":["https://github.com/KARAMBIRI65","https://www.linkedin.com/in/karambiri-ma"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Issa Aziz KARAMBIRI","alternateName":"issakarambiri.com","url":"https://issakarambiri.com/","author":{"@id":"https://issakarambiri.com/#issa"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Unbounded:wght@300;500;700;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="css/style.css">
 <script>(function(){var h=document.documentElement,L=null;try{if(localStorage.getItem("iak-theme")==="light")h.classList.add("light");L=localStorage.getItem("iak-lang")}catch(e){}if(L!=="fr"&&L!=="en")L=/^fr/i.test(navigator.language||"fr")?"fr":"en";window.IAK_LANG=L;if(L==="en"){h.lang="en";h.classList.add("i18n-wait");setTimeout(function(){h.classList.remove("i18n-wait")},1500)}})();</script>
 </head>
@@ -43,9 +43,10 @@
   <div class="wrap">
     <a class="logo" href="#top"><i></i>IAK</a>
     <nav aria-label="Sections" id="site-nav">
-      <a href="#a-propos">À propos</a>
+      <a href="#optitrade">OptiTrade</a>
       <a href="#projets">Projets</a>
       <a href="#experiences">Expériences</a>
+      <a href="#a-propos">À propos</a>
       <a href="#parcours">Parcours</a>
       <a href="#competences">Compétences</a>
       <a href="#contact">Contact</a>
@@ -62,68 +63,141 @@
 
 <div class="progress" id="progress" aria-hidden="true"></div>
 <main id="main" tabindex="-1">
-<section class="hero gut" id="top">
-  <canvas id="signals" aria-hidden="true"></canvas>
-  <div class="glow"></div>
-  <div class="fade"></div>
-  <div class="wrap hero-grid">
-    <div class="hero-text">
+<section class="hero hero2 gut" id="top">
+  <canvas id="signals" aria-hidden="true" hidden></canvas>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="h2-vignette" aria-hidden="true"></div>
+  <div class="wrap h2">
+    <div class="h2-top">
       <div class="status"><b>●</b> Élève ingénieur à l'ENSIIE · Stage de 3 à 4 mois dès mai 2027</div>
-      <p class="kicker">Je suis <span class="scramble" id="role">élève ingénieur data &amp; IA</span><span class="caret" aria-hidden="true"></span></p>
-      <h1 class="name"><span class="l"><span>Issa Aziz</span></span> <span class="l"><span>KARAMBIRI</span></span></h1>
-      <p class="lede-p">J'aime transformer des données en <strong>décisions</strong>, quel que soit le secteur.</p>
+      <span class="h2-loc mono" aria-hidden="true">48.63°N · 2.44°E</span>
+    </div>
+    <h1 class="h2-name"><span class="h2-l1" data-split>Issa Aziz</span><span class="h2-l2" data-split data-text="KARAMBIRI">KARAMBIRI</span></h1>
+    <div class="portrait h2-portrait" id="portrait">
+      <div class="ring" aria-hidden="true"></div>
+      <figure class="frame">
+        <img src="images/photo-issa.webp" fetchpriority="high" decoding="async" alt="Portrait d'Issa Aziz KARAMBIRI" width="800" height="1000">
+        <div class="scan" aria-hidden="true"></div>
+        <figcaption><span class="mono">IAK · 2026</span><span class="mono">ENSIIE · Évry</span></figcaption>
+      </figure>
+      <div class="chip c1"><i style="background:var(--up)"></i>Data science</div>
+      <div class="chip c2"><i style="background:var(--violet)"></i>IA &amp; deep learning</div>
+      <div class="chip c3"><i style="background:var(--gold)"></i>Finance &amp; marchés</div>
+      <a class="chip c4 mono" href="#optitrade" style="text-decoration:none">OptiTrade <small data-en="flagship project">projet phare</small></a>
+    </div>
+    <div class="h2-bottom">
+      <div class="hero-text">
+        <p class="kicker">Je suis <span class="scramble" id="role">élève ingénieur data &amp; IA</span><span class="caret" aria-hidden="true"></span></p>
+        <p class="lede-p">J'aime transformer des données en <strong>décisions</strong>, quel que soit le secteur.</p>
       <div class="ctas">
         <a class="btn primary magnetic" href="#contact">Me contacter <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></a>
         <div class="cv-wrap"><button class="btn ghost magnetic cv-dl" type="button" aria-expanded="false" aria-haspopup="true">Télécharger mon CV <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></button><div class="cv-pop" hidden><a class="cv-opt" data-v="stage" download><b>CV pour un stage</b><small>Avec ma recherche de stage dès mai 2027</small></a><a class="cv-opt" data-v="simple" download><b>CV simple</b><small>Mon parcours, sans mention de stage</small></a></div></div>
       </div>
-    </div>
-    <div class="portrait-wrap">
-      <div class="portrait" id="portrait">
-        <div class="ring" aria-hidden="true"></div>
-        <figure class="frame">
-          <img src="images/photo-issa.jpg" alt="Portrait d'Issa Aziz KARAMBIRI" width="800" height="1000">
-          <div class="scan" aria-hidden="true"></div>
-          <figcaption><span class="mono">IAK · 2026</span><span class="mono">ENSIIE · Évry</span></figcaption>
-        </figure>
-        <div class="chip c1"><i style="background:var(--up)"></i>Data science</div>
-        <div class="chip c2"><i style="background:var(--violet)"></i>IA &amp; deep learning</div>
-        <div class="chip c3"><i style="background:var(--gold)"></i>Finance &amp; marchés</div>
-        <div class="chip c4 mono">25/25 <small>pannes détectées</small></div>
       </div>
     </div>
   </div>
+  <a class="h2-scroll mono" href="#optitrade" aria-hidden="true" tabindex="-1"><i></i></a>
 </section>
 
 
 <div class="gut"><div class="wrap stats">
-  <div class="stat"><div class="v">2</div><div class="k">pays d'études, un parcours international : Maroc et France</div></div>
-  <div class="stat"><div class="v">2</div><div class="k">premiers stages : data science et développement web</div></div>
-  <div class="stat"><div class="v">−77 %</div><div class="k">de pertes liées à la fraude dans mon projet bancaire</div></div>
-  <div class="stat"><div class="v"><em>8</em></div><div class="k">secteurs couverts par mes projets, de l'aéronautique à la finance</div></div>
+  <div class="stat"><div class="v">2</div><div class="k" data-en="countries of study">pays d'études</div></div>
+  <div class="stat"><div class="v">2</div><div class="k" data-en="internships">stages en entreprise</div></div>
+  <div class="stat"><div class="v">−77 %</div><div class="k" data-en="fraud losses, banking project">de pertes liées à la fraude</div></div>
+  <div class="stat"><div class="v"><em>8</em></div><div class="k" data-en="sectors covered by my projects">secteurs couverts</div></div>
 </div></div>
 
-<section class="sec gut" id="a-propos">
+<div class="tape" aria-hidden="true"><div class="tape-in"><span>Python</span><i>◆</i><span>PyTorch</span><i>◆</i><span>LSTM</span><i>◆</i><span>XGBoost</span><i>◆</i><span>YOLOv8</span><i>◆</i><span>SQL</span><i>◆</i><span>Django</span><i>◆</i><span>React</span><i>◆</i><span>PostgreSQL</span><i>◆</i><span>Black-Scholes</span><i>◆</i><span>GARCH</span><i>◆</i><span>Séries temporelles</span><i>◆</i><span>SHAP</span><i>◆</i><span>Monte-Carlo</span><i>◆</i><span>C++</span><i>◆</i><span>OCaml</span><i>◆</i><span>Python</span><i>◆</i><span>PyTorch</span><i>◆</i><span>LSTM</span><i>◆</i><span>XGBoost</span><i>◆</i><span>YOLOv8</span><i>◆</i><span>SQL</span><i>◆</i><span>Django</span><i>◆</i><span>React</span><i>◆</i><span>PostgreSQL</span><i>◆</i><span>Black-Scholes</span><i>◆</i><span>GARCH</span><i>◆</i><span>Séries temporelles</span><i>◆</i><span>SHAP</span><i>◆</i><span>Monte-Carlo</span><i>◆</i><span>C++</span><i>◆</i><span>OCaml</span><i>◆</i></div></div>
+
+<section class="ot-feat gut" id="optitrade" aria-labelledby="feat-title">
+  <div class="feat-bg" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">01 · À propos</span><h2>Issa Aziz KARAMBIRI, <span>élève ingénieur data &amp; IA.</span></h2></div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>Je m'appelle Issa et je suis en deuxième année du cycle ingénieur en mathématiques appliquées et informatique à l'<strong>École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE)</strong>. J'aime partir d'un vrai problème et chercher dans les données ce qui peut vraiment aider.</p>
-        <p>Industrie, aéronautique, santé, environnement, sport, je m'adapte à tous les domaines. La finance reste celui qui m'attire le plus, et je me forme en parallèle à la finance de marché avec <strong>WorldQuant University</strong>.</p>
-        <p>Le reste, je préfère vous le raconter de vive voix.</p>
-      </div>
-      <dl class="about-facts">
-        <div><dt>Formation</dt><dd>ENSIIE, cycle ingénieur, 2<sup>e</sup> année (Master 1)</dd></div>
-        <div><dt>En parallèle</dt><dd>MSc Financial Engineering, WorldQuant University (en ligne, 2026 – 2028)</dd></div>
-        <div><dt>Langues</dt><dd>Français, anglais (B2)</dd></div>
-      </dl>
+    <div class="feat-head" data-rv>
+      <span class="eyebrow" data-en="Flagship project · Data science internship, 2025">Projet phare · Stage data science, 2025</span>
+      <h2 id="feat-title" class="feat-title">OptiTrade<span class="feat-dot">.</span></h2>
+      <p class="feat-q" data-en="Buy, sell or hold a stock?">Acheter, vendre ou garder une action&nbsp;?</p>
+      <p class="feat-lede" data-en="From raw data to a finished web app.">De la donnée brute à l'application web finie.</p>
     </div>
+
+    <div class="feat-stage" data-rv>
+      <div class="ot-tabs" role="tablist" aria-label="OptiTrade">
+        <button class="ot-tab on" type="button" role="tab" aria-selected="true" data-p="gal" data-en="App screenshots">Captures de l'app</button>
+        <button class="ot-tab" type="button" role="tab" aria-selected="false" data-p="demo" data-en="Real model results">Résultats réels du modèle</button>
+        <i class="ot-tab-ink" aria-hidden="true"></i>
+      </div>
+      <div class="ot-pane on" data-pane="gal">
+      <div class="gal" id="ot-gal" tabindex="0" aria-roledescription="carrousel" aria-label="Captures d'OptiTrade">
+        <div class="app-bar gal-bar">
+          <span class="app-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="gal-url mono"><span class="gal-lock" aria-hidden="true">●</span> optitrade.app / <b id="gal-title">Tableau de bord financier</b></span>
+          <span class="gal-count mono" id="gal-count">01 / 08</span>
+        </div>
+        <div class="gal-view" id="gal-view">
+          <figure class="gal-slide on" data-t-fr="Tableau de bord financier" data-t-en="Financial dashboard" data-c-fr="Les actifs les plus suivis et l'évolution de leurs prix." data-c-en="The most followed assets and how their prices move."><img src="images/optitrade/dashboard.webp" alt="Tableau de bord financier, capture d'OptiTrade" width="1390" height="723" loading="eager" decoding="async"></figure>
+          <figure class="gal-slide" data-t-fr="Historique des prédictions" data-t-en="Prediction history" data-c-fr="Chaque prédiction avec son modèle, son erreur et la décision proposée." data-c-en="Every prediction with its model, its error and the suggested decision." aria-hidden="true"><img src="images/optitrade/historique.webp" alt="Historique des prédictions, capture d'OptiTrade" width="1259" height="589" loading="lazy" decoding="async"></figure>
+          <figure class="gal-slide" data-t-fr="Lancer une prédiction" data-t-en="Run a prediction" data-c-fr="On choisit l'actif, l'algorithme et la date visée." data-c-en="Pick the asset, the algorithm and the target date." aria-hidden="true"><img src="images/optitrade/algorithme.webp" alt="Lancer une prédiction, capture d'OptiTrade" width="762" height="783" loading="lazy" decoding="async"></figure>
+          <figure class="gal-slide" data-t-fr="Signal et performance du modèle" data-t-en="Model signal and performance" data-c-fr="La recommandation du modèle, sa confiance et ses erreurs (MSE, MAE, RMSE)." data-c-en="The model recommendation, its confidence and its errors (MSE, MAE, RMSE)." aria-hidden="true"><img src="images/optitrade/signal.webp" alt="Signal et performance du modèle, capture d'OptiTrade" width="677" height="700" loading="lazy" decoding="async"></figure>
+          <figure class="gal-slide" data-t-fr="Prédictions face au réel" data-t-en="Predictions against reality" data-c-fr="Les prévisions du LSTM comparées aux vrais cours." data-c-en="LSTM forecasts compared with actual prices." aria-hidden="true"><img src="images/optitrade/lstm.webp" alt="Prédictions face au réel, capture d'OptiTrade" width="674" height="717" loading="lazy" decoding="async"></figure>
+          <figure class="gal-slide" data-t-fr="Détection d'anomalies" data-t-en="Anomaly detection" data-c-fr="Les valeurs aberrantes repérées avant d'entraîner les modèles." data-c-en="Outliers flagged before training the models." aria-hidden="true"><img src="images/optitrade/anomalies.webp" alt="Détection d'anomalies, capture d'OptiTrade" width="1388" height="651" loading="lazy" decoding="async"></figure>
+          <figure class="gal-slide" data-t-fr="246 437 lignes de cours" data-t-en="246,437 rows of prices" data-c-fr="Les données boursières nettoyées, prêtes pour les modèles." data-c-en="Cleaned stock data, ready for the models." aria-hidden="true"><img src="images/optitrade/donnees.webp" alt="246 437 lignes de cours, capture d'OptiTrade" width="1387" height="639" loading="lazy" decoding="async"></figure>
+          <figure class="gal-slide" data-t-fr="Analyse d'un actif" data-t-en="Asset analysis" data-c-fr="L'évolution d'un titre sur la période choisie." data-c-en="A stock's evolution over the chosen period." aria-hidden="true"><img src="images/optitrade/analyse.webp" alt="Analyse d'un actif, capture d'OptiTrade" width="679" height="679" loading="lazy" decoding="async"></figure>
+          <button class="gal-nav gal-prev" type="button" id="gal-prev" aria-label="Capture précédente" data-en-aria="Previous screenshot"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3 5 8l5 5"/></svg></button>
+          <button class="gal-nav gal-next" type="button" id="gal-next" aria-label="Capture suivante" data-en-aria="Next screenshot"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 3 5 5-5 5"/></svg></button>
+          <button class="gal-zoom mono" type="button" id="gal-zoom" data-en="⤢ Enlarge">⤢ Agrandir</button>
+        </div>
+        <div class="gal-foot">
+          <p class="gal-cap" id="gal-cap" aria-live="polite">Les actifs les plus suivis et l'évolution de leurs prix.</p>
+          <div class="gal-dots" id="gal-dots" role="tablist"></div>
+        </div>
+        <i class="gal-prog" aria-hidden="true"></i>
+      </div>
+      </div>
+      <div class="ot-pane" data-pane="demo">
+      <div class="app" id="ot-app">
+        <div class="app-bar">
+          <span class="app-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="app-name mono">OptiTrade</span>
+          <span class="app-live mono"><b></b><span data-en="test results">résultats des tests</span></span>
+        </div>
+        <div class="app-body">
+          <div class="app-side">
+            <div class="app-label mono" data-en="Tested stocks">Actions testées</div>
+            <button class="ot-tk on" type="button" data-i="0"><b>AEO</b><span>American Eagle</span></button>
+            <button class="ot-tk" type="button" data-i="1"><b>AMZN</b><span>Amazon</span></button>
+            <button class="ot-tk" type="button" data-i="2"><b>MA</b><span>Mastercard</span></button>
+            <button class="ot-tk" type="button" data-i="3"><b>V</b><span>Visa</span></button>
+          </div>
+          <div class="app-main">
+            <div class="app-top">
+              <div><div class="app-label mono" data-en="Model used">Modèle utilisé</div><div class="ot-model" id="ot-model">Random Forest</div><div class="ot-co" id="ot-co">AEO · American Eagle Outfitters</div></div>
+              <div class="ot-signal" id="ot-signal"><span class="mono" data-en="Model signal">Signal du modèle</span><b id="ot-sig-txt">Achat ▲</b></div>
+            </div>
+            <div class="ot-kpis">
+              <div class="ot-kpi"><span class="mono" data-en="Confidence score">Score de confiance</span><b class="mono" id="ot-conf">100 %</b><div class="ot-bar"><i id="ot-bar"></i></div></div>
+              <div class="ot-kpi"><span class="mono" data-en="Mean squared error (MSE)">Erreur quadratique (MSE)</span><b class="mono" id="ot-mse">0,0001</b><small id="ot-read"></small></div>
+            </div>
+          </div>
+        </div>
+        <div class="app-note mono" data-en="Results of my OptiTrade models on real market data. Data: World Stock Prices (Daily Updating), Kaggle, CC0 license, 246,437 rows after cleaning.">Résultats de mes modèles OptiTrade sur des données de marché réelles. Données : World Stock Prices (Daily Updating), Kaggle, licence CC0, 246 437 lignes après nettoyage.</div>
+      </div>
+      </div>
+      <dialog class="gal-dlg" id="gal-dlg" aria-label="Capture agrandie"><img alt="" id="gal-dlg-img"><button type="button" class="gal-dlg-x" id="gal-dlg-x" aria-label="Fermer" data-en-aria="Close">×</button></dialog>
+    </div>
+
+    <ol class="pipe" data-rv>
+      <li><b class="mono" data-count="300000">300 000</b><span data-en="rows of stock data at the start">lignes boursières au départ</span></li>
+      <li><b class="mono" data-count="246437">246 437</b><span data-en="kept after cleaning">gardées après nettoyage</span></li>
+      <li><b class="mono" data-count="4">4</b><span data-en="models compared, from linear regression to LSTM">modèles comparés, de la régression linéaire au LSTM</span></li>
+      <li><b class="mono">1</b><span data-en="complete web app, Django REST, React and PostgreSQL">application web complète, Django REST, React et PostgreSQL</span></li>
+    </ol>
   </div>
 </section>
 
 <section class="sec gut" id="projets">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">02 · Projets</span><h2>Un même métier, <span>de nombreux terrains de jeu.</span></h2></div>
+    <div class="sec-head"><span class="eyebrow" data-en="01 · Projects">01 · Projets</span><h2>Un même métier, <span>de nombreux terrains de jeu.</span></h2></div>
 
+    <div class="car-bar">
     <div class="filters" role="group" aria-label="Filtrer par secteur">
       <button type="button" data-f="all" aria-pressed="true">Tous</button>
       <button type="button" data-f="industrie" aria-pressed="false">Industrie</button>
@@ -135,8 +209,11 @@
       <button type="button" data-f="banque" aria-pressed="false">Banque</button>
       <button type="button" data-f="marches" aria-pressed="false">Marchés</button>
     </div>
+      <div class="car-ctl"><button class="car-btn" type="button" id="car-prev" aria-label="Projet précédent" data-en-aria="Previous project"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3 5 8l5 5"/></svg></button><span class="car-count" id="car-count" aria-live="polite"><b>01</b> / 13</span><button class="car-btn car-play" type="button" id="car-play" title="Arrêter ou relancer le défilement automatique" aria-pressed="false"><svg class="i-pause" viewBox="0 0 16 16" fill="currentColor"><rect x="4" y="3" width="3" height="10" rx="1"/><rect x="9" y="3" width="3" height="10" rx="1"/></svg><svg class="i-play" viewBox="0 0 16 16" fill="currentColor"><path d="M5 3l8 5-8 5z"/></svg><span class="cp-l">Pause</span></button><button class="car-btn" type="button" id="car-next" aria-label="Projet suivant" data-en-aria="Next project"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 3 5 5-5 5"/></svg></button></div>
+    </div>
+    <div class="car-prog" id="car-prog" aria-hidden="true"><i></i></div>
 
-    <div class="grid-proj" id="grid">
+    <div class="grid-proj slider show-all" id="grid" aria-live="off">
       <article class="card feat" data-dom="industrie" data-feat="1">
         <div class="top"><span class="dom">Industrie · Aéronautique</span></div>
         <h3>Maintenance prédictive des moteurs d'avion</h3>
@@ -145,6 +222,7 @@
             <p>Prévoir combien de vols il reste à un moteur avant la panne, et quand l'inspecter.</p>
             <div class="metric"><b>25/25</b><span>pannes imminentes détectées, avec 5 fausses alertes sur 75 moteurs sains</span></div>
             <div class="tags"><span>XGBoost</span><span>Séries temporelles</span><span>NASA C-MAPSS</span><span>Optimisation du coût</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Predictive maintenance">Maintenance prédictive</span><span class="acq-c" data-en="Remaining-life forecasting">Prévision de durée de vie</span><span class="acq-c" data-en="Cost-based decisions">Décision par le coût</span></div>
           </div>
           <svg viewBox="0 0 320 170" role="img" aria-label="Durée de vie restante prévue qui décroît jusqu'au seuil d'inspection de 42 cycles">
             <line x1="30" y1="140" x2="310" y2="140" stroke="var(--line2)"/>
@@ -170,6 +248,7 @@
         <p>Alerte précoce sur 19 rivières françaises, avec 20 ans de données.</p>
         <div class="metric"><b>79 %</b><span>des crues annoncées, en moyenne 2,4 jours à l'avance</span></div>
         <div class="tags"><span>XGBoost</span><span>Événements rares</span><span>Hydrologie</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Rare-event forecasting">Prévision d'événements rares</span><span class="acq-c" data-en="Early warning system">Système d'alerte précoce</span><span class="acq-c" data-en="20 years of real data">Données réelles sur 20 ans</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/prevision-crues-france" target="_blank" rel="noopener"><code>prevision-crues-france</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -181,6 +260,7 @@
             <p>Repère les SMS frauduleux et alerte le senior avant qu'il clique, sans jamais lire ses conversations.</p>
             <div class="metric"><b>4 jours</b><span>5 étudiants de 3 écoles (ENSIIE, Télécom SudParis, IMT-BS). J'étais responsable de la technique et du prototype.</span></div>
             <div class="tags"><span>Détection de liens frauduleux</span><span>Prototype d'application</span><span>UX seniors</span><span>Travail en équipe</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Technical team lead">Conduite technique d'équipe</span><span class="acq-c" data-en="Rapid prototyping">Prototypage rapide</span><span class="acq-c" data-en="User-centred design">Conception centrée utilisateur</span></div>
           </div>
           <div class="phone" aria-hidden="true">
             <div class="ph-bar"><span>Messages</span><span class="mono">14:02</span></div>
@@ -197,6 +277,7 @@
         <p>YOLOv8 entraîné sur des images annotées à la main pour repérer 6 types de déchets.</p>
         <div class="metric"><b>89,5 %</b><span>de F1-score (précision 89,4 %, rappel 89,5 %)</span></div>
         <div class="tags"><span>YOLOv8</span><span>PyTorch</span><span>OpenCV</span><span>Deep learning</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Computer vision">Vision par ordinateur</span><span class="acq-c" data-en="Data labelling">Annotation de données</span><span class="acq-c" data-en="GPU training">Entraînement sur GPU</span></div>
         <div class="repo static"><code>janv. – mars 2025</code></div>
       </article>
 
@@ -206,6 +287,7 @@
         <p>Estimer le risque à 5 ans à partir d'une simple consultation.</p>
         <div class="metric"><b>87 %</b><span>des malades détectés, contre 46 % pour la règle clinique seule</span></div>
         <div class="tags"><span>Régression logistique</span><span>SHAP</span><span>Calibration</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Explainable AI">IA explicable</span><span class="acq-c" data-en="Decision threshold tuning">Réglage du seuil de décision</span><span class="acq-c" data-en="Health data">Données de santé</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/depistage-diabete" target="_blank" rel="noopener"><code>depistage-diabete</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -215,6 +297,7 @@
         <p>Repérer 0,17 % de paiements frauduleux, en raisonnant en euros économisés.</p>
         <div class="metric"><b>−77 %</b><span>de pertes liées à la fraude, avec 87 % d'alertes justes</span></div>
         <div class="tags"><span>XGBoost</span><span>PR-AUC 0,88</span><span>Données déséquilibrées</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Anomaly detection">Détection d'anomalies</span><span class="acq-c" data-en="Business value in euros">Valeur métier en euros</span><span class="acq-c" data-en="Rare-class evaluation">Évaluation sur classes rares</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/detection-fraude-bancaire" target="_blank" rel="noopener"><code>detection-fraude-bancaire</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -224,6 +307,7 @@
         <p>Cinq modèles comparés pour prévoir la volatilité à 5 jours et calculer la VaR.</p>
         <div class="metric"><b>20 ans</b><span>de données, test de Diebold-Mariano</span></div>
         <div class="tags"><span>GARCH</span><span>LSTM · PyTorch</span><span>VaR</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Volatility forecasting">Prévision de volatilité</span><span class="acq-c" data-en="Risk measurement (VaR)">Mesure du risque (VaR)</span><span class="acq-c" data-en="Statistical model comparison">Comparaison statistique de modèles</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/volatilite-cac40" target="_blank" rel="noopener"><code>volatilite-cac40</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -233,6 +317,7 @@
         <p>Chances de victoire, nul ou défaite dans les 5 grands championnats.</p>
         <div class="metric"><b>83 %</b><span>de bons pronostics quand le modèle est sûr à plus de 75 %</span></div>
         <div class="tags"><span>Elo</span><span>XGBoost</span><span>Streamlit</span><span>pytest</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Feature engineering (Elo)">Création de variables (Elo)</span><span class="acq-c" data-en="Leak-free validation">Validation sans fuite de données</span><span class="acq-c" data-en="Prediction app">Application de prédiction</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/prediction-matchs-football" target="_blank" rel="noopener"><code>prediction-matchs-football</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -242,6 +327,7 @@
         <p>Acheter, négocier ou passer son chemin, avec un avis clair sur chaque terrain.</p>
         <div class="metric"><b>+1,6 M€</b><span>seule stratégie rentable sur 1 200 parcelles test (AUC 0,92)</span></div>
         <div class="tags"><span>XGBoost</span><span>Régression</span><span>Aide à la décision</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Fair-price estimation">Estimation du juste prix</span><span class="acq-c" data-en="Risk analysis">Analyse de risque</span><span class="acq-c" data-en="Clear verdict for the user">Verdict clair pour l'utilisateur</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/analyse-parcelles" target="_blank" rel="noopener"><code>analyse-parcelles</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -251,6 +337,7 @@
         <p>Estimer le risque de défaut et expliquer chaque décision.</p>
         <div class="metric"><b>÷3</b><span>coût des erreurs de crédit par rapport à « tout accepter »</span></div>
         <div class="tags"><span>XGBoost</span><span>SHAP</span><span>Streamlit</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Risk scoring">Scoring de risque</span><span class="acq-c" data-en="Explainable AI">IA explicable</span><span class="acq-c" data-en="What-if scenarios">Scénarios « et si »</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/scoring-credit-app" target="_blank" rel="noopener"><code>scoring-credit-app</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -260,6 +347,7 @@
         <p>41 188 clients regroupés en 5 segments pour mieux cibler les offres.</p>
         <div class="metric"><b>−20 %</b><span>d'appels pour seulement 8 % de souscriptions perdues</span></div>
         <div class="tags"><span>K-means</span><span>ACP</span><span>Recommandations métier</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Clustering">Clustering</span><span class="acq-c" data-en="Dimensionality reduction">Réduction de dimension</span><span class="acq-c" data-en="Marketing targeting">Ciblage marketing</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/segmentation-clients-bancaires" target="_blank" rel="noopener"><code>segmentation-clients-bancaires</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -269,6 +357,7 @@
         <p>Markowitz, clustering et HRP testés sur le CAC 40, frais inclus.</p>
         <div class="metric"><b>32</b><span>actions, de 2015 à 2025, rebalancement mensuel</span></div>
         <div class="tags"><span>Markowitz</span><span>HRP</span><span>Backtest</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Asset allocation">Allocation d'actifs</span><span class="acq-c" data-en="Rigorous backtesting">Backtest rigoureux</span><span class="acq-c" data-en="Risk management">Gestion du risque</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/optimisation-portefeuille" target="_blank" rel="noopener"><code>optimisation-portefeuille</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
 
@@ -278,37 +367,35 @@
         <p>Le ton de la presse aide-t-il à prévoir le rendement du lendemain ?</p>
         <div class="metric"><b>FinBERT</b><span>transformers, économétrie et étude d'événement</span></div>
         <div class="tags"><span>NLP</span><span>Hugging Face</span><span>Backtest</span></div>
+            <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c" data-en="Financial NLP">NLP financier</span><span class="acq-c" data-en="Language models">Modèles de langage</span><span class="acq-c" data-en="Event study">Étude d'événement</span></div>
         <a class="repo" href="https://github.com/KARAMBIRI65/sentiment-financier" target="_blank" rel="noopener"><code>sentiment-financier</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
     </div>
 
+    <div class="sl-dots" id="sl-dots" aria-hidden="true"></div>
     <div class="also">
       <span class="eyebrow">Projets d'école en programmation</span>
       <div class="also-row">
-        <div><b>Modèle de Black-Scholes</b><span>C++ · prix d'options européennes avec les cours de processus stochastiques · 2026, en cours</span></div>
-        <div><b>Machine virtuelle OCaml</b><span>C · interprétation du bytecode, pile et gestion de la mémoire · 2026</span></div>
-        <div><b>Mini-SGBD relationnel</b><span>OCaml · conception, implémentation et analyse d'un système de gestion de bases de données relationnelles fonctionnel · module INPF12, ENSIIE 1<sup>re</sup> année, 2025-2026</span></div>
+        <div><b>Modèle de Black-Scholes</b><span data-en="C++ · European option pricing · 2026, ongoing">C++ · pricing d'options européennes · 2026, en cours</span></div>
+        <div><b>Machine virtuelle OCaml</b><span data-en="C · bytecode, stack and memory · 2026">C · bytecode, pile et mémoire · 2026</span></div>
+        <div><b>Mini-SGBD relationnel</b><span data-en="OCaml · designed from scratch · ENSIIE, 2025-2026">OCaml · conçu de A à Z · ENSIIE, 2025-2026</span></div>
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="sec gut" id="experiences">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">03 · Expériences</span><h2>Deux premiers stages, <span>pour poser les bases.</span></h2></div>
+    <div class="sec-head"><span class="eyebrow" data-en="02 · Experience">02 · Expériences</span><h2>Deux premiers stages, <span>pour poser les bases.</span></h2></div>
     <div class="xp">
       <article class="job" style="--c:var(--gold)">
         <div class="job-when"><b>mars – mai 2025</b>ENTSI · Oujda, Maroc</div>
         <div>
-          <h3>Stagiaire data science · <span>OptiTrade</span></h3>
+          <h3 data-en="Data science &amp;amp; AI intern · &lt;span&gt;OptiTrade&lt;/span&gt;">Stagiaire data science &amp; IA · <span>OptiTrade</span></h3>
           <div class="role-where">Application web d'aide à l'investissement</div>
-          <div class="kpi"><div><b>300 000</b><span>lignes boursières au départ</span></div><div><b>246 437</b><span>après nettoyage</span></div><div><b>4</b><span>modèles comparés</span></div></div>
-          <ul>
-            <li>J'ai comparé la régression linéaire, Random Forest, XGBoost et un LSTM (MSE, RMSE, R²) pour conseiller d'acheter, de vendre ou de garder une action.</li>
-            <li>J'ai intégré le modèle dans une application web complète.</li>
-          </ul>
+          <a class="job-link" href="#optitrade" data-en="See the project ↑">Voir le projet ↑</a>
           <div class="tags"><span>Python</span><span>Django REST</span><span>React</span><span>PostgreSQL</span><span>scikit-learn</span><span>TensorFlow</span></div>
+          <div class="acq"><span class="acq-l" data-en="Skills gained">Compétences acquises</span><span class="acq-c acq-ai" data-en="AI · Machine learning">IA · Machine learning</span><span class="acq-c acq-ai" data-en="Deep learning (LSTM)">Deep learning (LSTM)</span><span class="acq-c" data-en="Data preparation at scale">Préparation de données à grande échelle</span><span class="acq-c" data-en="Putting a model into a web app">Intégration d'un modèle dans une app web</span></div>
         </div>
       </article>
       <article class="job" style="--c:var(--blue)">
@@ -327,18 +414,53 @@
   </div>
 </section>
 
+<section class="sec gut" id="a-propos">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow" data-en="03 · About">03 · À propos</span><h2>Issa Aziz KARAMBIRI, <span>élève ingénieur data &amp; IA.</span></h2></div>
+    <p class="manifesto" id="manifesto" data-en="Data is only worth something when it helps someone <em>decide</em>.">Une donnée n'a de valeur que si elle aide quelqu'un à <em>décider</em>.</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Je m'appelle Issa et je suis en deuxième année du cycle ingénieur en mathématiques appliquées et informatique à l'<strong>École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE)</strong>. J'aime partir d'un vrai problème et chercher dans les données ce qui peut vraiment aider.</p>
+        <p>Industrie, aéronautique, santé, environnement, sport, je m'adapte à tous les domaines. La finance reste celui qui m'attire le plus, et je me forme en parallèle à la finance de marché avec <strong>WorldQuant University</strong>.</p>
+        <p>Le reste, je préfère vous le raconter de vive voix.</p>
+      </div>
+      <dl class="about-facts">
+        <div><dt>Formation</dt><dd>ENSIIE, cycle ingénieur, 2<sup>e</sup> année (Master 1)</dd></div>
+        <div><dt>En parallèle</dt><dd>MSc Financial Engineering, WorldQuant University (en ligne, 2026 – 2028)</dd></div>
+        <div><dt>Langues</dt><dd>Français, anglais (B2)</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
 <section class="sec gut mindset" id="etat-d-esprit">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">04 · Ce que je cherche</span><h2>Un stage pour apprendre, <span>et être utile dès le début.</span></h2></div>
+    <div class="sec-head"><span class="eyebrow" data-en="04 · What I am looking for">04 · Ce que je cherche</span><h2>Un stage pour apprendre, <span>et être utile dès le début.</span></h2></div>
     <div class="mind-grid">
       <blockquote class="mind-quote">
         <p>Je ne prétends pas tout savoir. <b>Je veux apprendre auprès d'une équipe exigeante, et lui apporter ma rigueur.</b></p>
       </blockquote>
-      <div class="mind-list">
-        <div class="mind-item"><span class="mono">01</span><div><b>Je pose des questions</b></div></div>
-        <div class="mind-item"><span class="mono">02</span><div><b>Je mesure ce qui compte</b></div></div>
-        <div class="mind-item"><span class="mono">03</span><div><b>Je vérifie mon travail</b></div></div>
-        <div class="mind-item"><span class="mono">04</span><div><b>J'apprends vite</b></div></div>
+      <div class="method" id="method" data-rv>
+        <div class="method-tabs" role="tablist" aria-label="Méthode" data-en-aria="Method">
+          <button class="m-tab on" type="button" role="tab" aria-selected="true" data-i="0"><span class="mono">01</span><b data-en="I ask questions">Je pose des questions</b><i class="m-bar"></i></button>
+          <button class="m-tab" type="button" role="tab" aria-selected="false" data-i="1"><span class="mono">02</span><b data-en="I measure what matters">Je mesure ce qui compte</b><i class="m-bar"></i></button>
+          <button class="m-tab" type="button" role="tab" aria-selected="false" data-i="2"><span class="mono">03</span><b data-en="I check my work">Je vérifie mon travail</b><i class="m-bar"></i></button>
+          <button class="m-tab" type="button" role="tab" aria-selected="false" data-i="3"><span class="mono">04</span><b data-en="I learn fast">J'apprends vite</b><i class="m-bar"></i></button>
+        </div>
+        <div class="method-panels">
+          <div class="m-panel on" role="tabpanel">
+            <p class="m-ex"><span class="mono" data-en="With OptiTrade">Avec OptiTrade</span><span data-en="The question was not to predict a price, but to help choose between buying, selling and holding a stock.">La question n'était pas de prédire un prix, mais d'aider à choisir entre acheter, vendre et garder une action.</span></p>
+          </div>
+          <div class="m-panel" role="tabpanel">
+            <p class="m-ex"><span class="mono" data-en="With OptiTrade">Avec OptiTrade</span><span data-en="300,000 rows at the start, 246,437 kept. MSE, RMSE and R² as judges.">300 000 lignes au départ, 246 437 gardées. MSE, RMSE et R² comme juges.</span></p>
+          </div>
+          <div class="m-panel" role="tabpanel">
+            <p class="m-ex"><span class="mono" data-en="With OptiTrade">Avec OptiTrade</span><span data-en="Linear regression, Random Forest, XGBoost and LSTM, tested on the same data.">Régression linéaire, Random Forest, XGBoost et LSTM, testés sur les mêmes données.</span></p>
+          </div>
+          <div class="m-panel" role="tabpanel">
+            <p class="m-ex"><span class="mono" data-en="With OptiTrade">Avec OptiTrade</span><span data-en="The model ended up in a real web app, with Django REST, React and PostgreSQL.">Le modèle a fini dans une vraie application web, avec Django REST, React et PostgreSQL.</span></p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="seek">
@@ -351,14 +473,13 @@
 
 <section class="sec gut" id="parcours">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">05 · Parcours</span><h2>Un parcours international, <span>deux formations menées de front.</span></h2></div>
+    <div class="sec-head"><span class="eyebrow" data-en="05 · Background">05 · Parcours</span><h2>Un parcours international, <span>deux formations menées de front.</span></h2></div>
     <div class="journey three">
       <div class="stop">
         <div class="dot"></div>
         <div class="yr">2023 – 2025 · Maroc</div>
         <h3>DUT Technologique</h3>
         <div class="where">École Supérieure de Technologie d'Oujda</div>
-        <p>J'y ai fait mes deux premiers stages en entreprise.</p>
         <span class="pill">Mention Très Bien</span>
       </div>
       <div class="stop now">
@@ -366,14 +487,12 @@
         <div class="yr">Depuis sept. 2025 · France</div>
         <h3>ENSIIE, cycle ingénieur</h3>
         <div class="where">École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise</div>
-        <p>Je suis en 2ᵉ année (Master 1) à Évry-Courcouronnes, en mathématiques appliquées et informatique, avec une orientation data, IA et finance.</p>
       </div>
       <div class="stop now">
         <div class="dot"></div>
         <div class="yr">Depuis nov. 2026 · En ligne, États-Unis</div>
         <h3>Master of Science en ingénierie financière</h3>
         <div class="where">WorldQuant University</div>
-        <p>Un programme en ligne de deux ans que je suis en parallèle de l'ENSIIE, pour me former à la finance de marché.</p>
         <span class="pill">En parallèle</span>
       </div>
     </div>
@@ -399,7 +518,6 @@
         <div>
           <span class="eyebrow">En parallèle · depuis novembre 2026</span>
           <h3>WorldQuant University · MSc Financial Engineering</h3>
-          <p>En ligne, sur deux ans, en plus de ma formation d'ingénieur.</p>
         </div>
         <span class="pill">2026 – 2028 · En ligne</span>
       </div>
@@ -415,16 +533,18 @@
 
 <section class="sec gut" id="competences">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">06 · Compétences</span><h2>De la donnée brute <span>à la décision expliquée.</span></h2></div>
-    <div class="skills">
-      <div class="sk"><h3>Langages</h3>
-        <ul><li>Python</li><li>SQL</li><li>C++</li><li>C</li><li>R</li><li>OCaml</li><li>Java</li><li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
-      <div class="sk"><h3>Data &amp; IA</h3>
-        <ul><li>pandas · NumPy</li><li>scikit-learn</li><li>XGBoost</li><li>TensorFlow</li><li>PyTorch</li><li>YOLOv8 · OpenCV</li><li>SHAP</li><li>Hugging Face</li></ul></div>
-      <div class="sk"><h3>Méthodes</h3>
-        <ul><li>Séries temporelles</li><li>GARCH · LSTM</li><li>Événements rares</li><li>Validation croisée</li><li>Optimisation</li><li>Économétrie</li></ul></div>
-      <div class="sk"><h3>Outils</h3>
-        <ul><li>PostgreSQL</li><li>Django · React</li><li>Streamlit</li><li>Git · GitHub</li><li>VS Code</li><li>Jupyter · Colab</li><li>LaTeX</li><li>Power BI</li><li>Excel</li></ul></div>
+    <div class="sec-head"><span class="eyebrow" data-en="06 · Skills">06 · Compétences</span><h2>De la donnée brute <span>à la décision expliquée.</span></h2></div>
+    <div class="orb-wrap" data-rv>
+      <div class="orb" id="orb" aria-hidden="true">
+        <div class="orb-stage" id="orb-stage">
+          <div class="orb-core"><b id="orb-n">34</b><span id="orb-l" data-en="skills">compétences</span></div>
+        </div>
+      </div>
+      <div class="orb-side">
+        <div class="orb-tabs" role="tablist" aria-label="Domaines de compétences"><button class="orb-tab on" type="button" role="tab" aria-selected="true" data-d="lang" style="--dc:#5B8CFF"><i></i><span>Langages</span><b>11</b></button><button class="orb-tab" type="button" role="tab" aria-selected="false" data-d="data" style="--dc:#B48CFF"><i></i><span>Data &amp; IA</span><b>8</b></button><button class="orb-tab" type="button" role="tab" aria-selected="false" data-d="meth" style="--dc:#F2B84B"><i></i><span>Méthodes</span><b>6</b></button><button class="orb-tab" type="button" role="tab" aria-selected="false" data-d="tool" style="--dc:#3DD6A3"><i></i><span>Outils</span><b>9</b></button></div>
+        <div class="orb-panels"><div class="orb-panel on" data-d="lang" style="--dc:#5B8CFF"><p data-en="Python every day, C++ and OCaml to get closer to the machine.">Python au quotidien, C++ et OCaml pour aller au plus près de la machine.</p><ul><li>Python</li><li>SQL</li><li>C++</li><li>C</li><li>R</li><li>OCaml</li><li>Java</li><li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div><div class="orb-panel" data-d="data" style="--dc:#B48CFF" hidden><p data-en="From data cleaning all the way to explaining each prediction.">Du nettoyage des données jusqu'à l'explication de chaque prédiction.</p><ul><li>pandas · NumPy</li><li>scikit-learn</li><li>XGBoost</li><li>TensorFlow</li><li>PyTorch</li><li>YOLOv8 · OpenCV</li><li>SHAP</li><li>Hugging Face</li></ul></div><div class="orb-panel" data-d="meth" style="--dc:#F2B84B" hidden><p data-en="Forecast, validate, optimise: the backbone of all my projects.">Prévoir, valider, optimiser : la base de tous mes projets.</p><ul><li>Séries temporelles</li><li>GARCH · LSTM</li><li>Événements rares</li><li>Validation croisée</li><li>Optimisation</li><li>Économétrie</li></ul></div><div class="orb-panel" data-d="tool" style="--dc:#3DD6A3" hidden><p data-en="To ship real applications, not just notebooks.">Pour livrer de vraies applications, pas seulement des notebooks.</p><ul><li>PostgreSQL</li><li>Django · React</li><li>Streamlit</li><li>Git · GitHub</li><li>VS Code</li><li>Jupyter · Colab</li><li>LaTeX</li><li>Power BI</li><li>Excel</li></ul></div></div>
+        <div class="orb-prog"><i id="orb-prog"></i></div>
+      </div>
     </div>
     <div class="langs"><span class="eyebrow">Langues</span><span><b>Français</b> langue maternelle</span><span><b>Anglais</b> B2</span></div>
   </div>
@@ -432,14 +552,14 @@
 
 <section class="sec gut" id="engagement">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">07 · Engagement &amp; distinctions</span><h2>Prendre des responsabilités <span>au service des autres.</span></h2></div>
+    <div class="sec-head"><span class="eyebrow" data-en="07 · Volunteering &amp; awards">07 · Engagement &amp; distinctions</span><h2>Prendre des responsabilités <span>au service des autres.</span></h2></div>
     <div class="two">
       <article class="box role now">
         <div class="role-top"><span class="dom" style="--c:var(--up)">En cours</span><span class="mono role-date">août 2026 – aujourd'hui</span></div>
         <h3>Ambassadeur, YITU Association</h3>
         <div class="role-where">Île-de-France · bénévolat</div>
         <p>YITU s'engage depuis plusieurs années dans la lutte contre la précarité étudiante, avec des distributions de repas gratuits et des ateliers CV et de soutien scolaire. En tant qu'ambassadeur, je participe à ces actions solidaires.</p>
-        <figure class="role-photo"><a class="hob-photo" href="images/yitu-distribution-repas.jpg" target="_blank" rel="noopener"><img src="images/yitu-distribution-repas.jpg" alt="Issa prépare des repas gratuits pour des étudiants lors d'une distribution solidaire de YITU Association" loading="lazy" width="900" height="1200"></a><figcaption>Distribution solidaire de repas gratuits aux étudiants en situation de précarité, novembre 2026.</figcaption></figure>
+        <figure class="role-photo"><a class="hob-photo" href="images/yitu-distribution-repas.webp" target="_blank" rel="noopener"><img src="images/yitu-distribution-repas.webp" alt="Issa prépare des repas gratuits pour des étudiants lors d'une distribution solidaire de YITU Association" loading="lazy" width="900" height="1200"></a><figcaption>Distribution solidaire de repas gratuits aux étudiants en situation de précarité, novembre 2026.</figcaption></figure>
         <div class="tags"><span>Leadership</span><span>Solidarité</span><span>Égalité des chances</span><span>Orientation</span></div>
         <a class="repo" href="https://www.yituassociation.org" target="_blank" rel="noopener"><code>yituassociation.org</code><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
       </article>
@@ -457,29 +577,31 @@
       <span class="eyebrow">Distinctions</span>
       <div class="award-row">
         <figure class="award">
-          <a class="award-img" href="images/trophee-debat.jpg" target="_blank" rel="noopener"><img src="images/trophee-debat.jpg" alt="Trophée du concours d'art oratoire" loading="lazy" width="600" height="800"></a>
+          <a class="award-img" href="images/trophee-debat.webp" target="_blank" rel="noopener"><img src="images/trophee-debat.webp" alt="Trophée du concours d'art oratoire" loading="lazy" width="600" height="800"></a>
           <figcaption><span class="mono award-y">2024</span><b>Lauréat du concours d'art oratoire</b><p>Semaine scientifique du CETASSO, Oujda.</p></figcaption>
         </figure>
         <figure class="award">
-          <a class="award-img" href="images/prix-excellence.jpg" target="_blank" rel="noopener"><img src="images/prix-excellence.jpg" alt="Trophée du Prix d'Excellence" loading="lazy" width="600" height="800"></a>
+          <a class="award-img" href="images/prix-excellence.webp" target="_blank" rel="noopener"><img src="images/prix-excellence.webp" alt="Trophée du Prix d'Excellence" loading="lazy" width="600" height="800"></a>
           <figcaption><span class="mono award-y">2023 – 2024</span><b>Prix d'Excellence</b><p>Décerné par le CETASSO, Université Mohammed Premier d'Oujda.</p></figcaption>
         </figure>
       </div>
       <div class="award-photos">
-        <figure class="award-wide"><a href="images/finale-debat.jpg" target="_blank" rel="noopener"><img src="images/finale-debat.jpg" alt="Issa au pupitre pendant la finale du concours d'art oratoire" loading="lazy" width="1000" height="625"></a><figcaption>En finale du concours d'art oratoire, Semaine scientifique du CETASSO, Oujda, 2024.</figcaption></figure>
+        <figure class="award-wide"><a href="images/finale-debat.webp" target="_blank" rel="noopener"><img src="images/finale-debat.webp" alt="Issa au pupitre pendant la finale du concours d'art oratoire" loading="lazy" width="1000" height="625"></a><figcaption>En finale du concours d'art oratoire, Semaine scientifique du CETASSO, Oujda, 2024.</figcaption></figure>
         
       </div>
     </div>
     <div class="hobbies" id="hobbies">
       <span class="eyebrow">En dehors des cours</span>
       <div class="hob-row">
-        <div class="hob"><span class="hob-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span><div><b>Lecture</b><p>J'aime apprendre au-delà des cours.</p></div></div>
-        <div class="hob"><span class="hob-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span><div><b>Musique</b><p>Elle m'aide à me concentrer comme à décompresser.</p></div></div>
-        <div class="hob"><span class="hob-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 13.9A4 4 0 0 1 7.5 6a5 5 0 0 1 9 0A4 4 0 0 1 18 13.9V21H6z"/><path d="M6 17h12"/></svg></span><div><b>Cuisine</b><p>Je suis toujours à la recherche de nouvelles recettes.</p><a class="hob-photo" href="images/cuisine.jpg" target="_blank" rel="noopener"><img src="images/cuisine.jpg" alt="Issa derrière un buffet, en tenue de service" loading="lazy" width="960" height="600"></a></div></div>
+        <div class="hob"><span class="hob-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg></span><div><b>Lecture</b></div></div>
+        <div class="hob"><span class="hob-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span><div><b>Musique</b></div></div>
+        <div class="hob"><span class="hob-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 13.9A4 4 0 0 1 7.5 6a5 5 0 0 1 9 0A4 4 0 0 1 18 13.9V21H6z"/><path d="M6 17h12"/></svg></span><div><b>Cuisine</b></div></div>
+        <a class="hob-photo hob-photo-side" href="images/cuisine.webp" target="_blank" rel="noopener"><img src="images/cuisine.webp" alt="Issa derrière un buffet, en tenue de service" loading="lazy" width="960" height="600"></a>
       </div>
     </div>
   </div>
 </section>
+
 
 
 <section class="contact gut" id="contact">
@@ -561,7 +683,7 @@
 
 <div class="gut"><footer class="wrap"><span>© 2026 Issa Aziz KARAMBIRI · <a href="#" data-privacy-link="1">Confidentialité</a></span><span class="mono">Maroc → France</span></footer></div>
 
-<script src="js/script.js"></script>
+<script src="js/script.js" defer></script>
 <script data-goatcounter="https://karambiri65.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
